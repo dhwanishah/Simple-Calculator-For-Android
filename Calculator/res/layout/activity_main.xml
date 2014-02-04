@@ -1,0 +1,247 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/numberDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="right"
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        android:text="@string/startingZero"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+    
+    <LinearLayout 
+        android:id="@+id/row1"
+        android:layout_below="@id/numberDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" >
+
+        <Button
+            android:id="@+id/bt9"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textColor="#fff"
+            android:text="@string/bt9" />
+
+        <Button
+            android:id="@+id/bt8"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textColor="#fff"
+            android:text="@string/bt8" />
+
+        <Button
+            android:id="@+id/bt7"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textColor="#fff"
+            android:text="@string/bt7" />
+
+        <Button
+            android:id="@+id/btPlus"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textColor="#fff"
+            android:text="@string/btPlus" />        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/row2"
+        android:layout_below="@id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" >
+
+        <Button
+            android:id="@+id/bt6"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textColor="#fff"
+            android:text="@string/bt6" />
+
+        <Button
+            android:id="@+id/bt5"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textColor="#fff"
+            android:text="@string/bt5" />
+
+        <Button
+            android:id="@+id/bt4"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textColor="#fff"
+            android:text="@string/bt4" />
+
+        <Button
+            android:id="@+id/btMinus"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textColor="#fff"
+            android:text="@string/btMinus" />        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/row3"
+        android:layout_below="@id/row2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" >
+
+        <Button
+            android:id="@+id/bt3"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textColor="#fff"
+            android:text="@string/bt3" />
+
+        <Button
+            android:id="@+id/bt2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textColor="#fff"
+            android:text="@string/bt2" />
+
+        <Button
+            android:id="@+id/bt1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textColor="#fff"
+            android:text="@string/bt1" />
+
+        <Button
+            android:id="@+id/btMulti"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textColor="#fff"
+            android:text="@string/btMulti" />        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/row4"
+        android:layout_below="@id/row3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" >
+
+        <Button
+            android:id="@+id/btC"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textColor="#fff"
+            android:text="@string/btC" />
+
+        <Button
+            android:id="@+id/bt0"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textColor="#fff"
+            android:text="@string/bt0" />
+
+        <Button
+            android:id="@+id/btDec"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textColor="#fff"
+            android:text="@string/btDec" />
+
+        <Button
+            android:id="@+id/btDiv"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textColor="#fff"
+            android:text="@string/btDiv" />        
+    </LinearLayout>
+    	
+    <Button
+            android:id="@+id/btEQ"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_below="@id/row4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:onClick="onClick"
+            android:textColor="#fff"
+            android:text="@string/btEQ" />
+
+</RelativeLayout>
