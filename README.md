@@ -1,1 +1,1 @@
-Simple little calculator for android devices I made when I was bored.
+Simple little calculator in 20mins for android, cause why not?!
